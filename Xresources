@@ -1,0 +1,60 @@
+!! Colorscheme
+
+! special
+*.foreground:			#ffffff
+*.background:			#000000
+*.cursorColor:			#afbfbf
+
+! black
+*.color0:			#263640
+*.color8:			#4a697d
+
+! red
+*.color1:			#d12f2c
+*.color9:			#fa3935
+
+! green
+*.color2:			#819400
+*.color10:			#a4bd00
+
+! yellow
+*.color3:			#b08500
+*.color11:			#d9a400
+
+! blue
+*.color4:			#2587cc
+*.color12:			#2ca2f5
+
+! magenta
+*.color5:			#696ebf
+*.color13:			#8086e8
+
+! cyan
+*.color6:			#89c93
+*.color14:			#33c5ba
+
+! white
+*.color7:			#bfbaac
+*.color15:			#fdf6e3
+
+!! XTerm configuration
+! 256 color
+XTerm.termName:			xterm-256color
+
+! Force UTF-8 locale
+XTerm.vt100.locale:		false
+XTerm.vt100.utf8:		true
+
+! Makes 'Alt' key behave as on other terminals
+XTerm.vt100.metaSendsEscape:	true
+
+! Fix the backspace key
+XTerm.vt100.backarrowKey:	false
+XTerm.ttyModes:			erase ^?
+
+! Ctrl + Alt + c to Copy
+! Crtl + Alt + v to Paste
+
+XTerm*VT100.Translations:		#override\n\
+	Shift Ctrl <KeyPress> v:	insert-selection(CLIPBOARD)\n\
+	Shift Ctrl <KeyPress> c:	copy-selection(CLIPBOARD)\n
