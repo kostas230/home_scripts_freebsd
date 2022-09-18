@@ -141,6 +141,9 @@ bind-key	4-Return		"xterm -fa 'Ubuntu Font' -fs 10"
 # Win-b spawns browser
 bind-key	4-b			firefox
 
+# Prinscreen
+bind-key	Print			xfce4-screenshooter
+
 # ===============================================================
 # Ignore programs by that name by not drawing borders around them
 # ===============================================================
